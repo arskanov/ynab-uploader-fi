@@ -27,3 +27,7 @@ Select your bank and file to upload. The site will update with your results.
 ### Requirements
  Python v3.7
  pipenv
+
+### Thanks
+Thanks to `danielcft/nordea-ynab-converter-dk` for the base for nordea-ynab conversions, under MIT license.
+Thanks to `wesselt/bunq2ynab` for ynab-uploading code, under GPLv2 license.
