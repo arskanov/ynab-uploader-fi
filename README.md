@@ -4,7 +4,7 @@ Made for the Finnish version of Nordea's website.
 
 ### Usage example:
 Add file "config.py" with contents:
-```
+```py
 personal_access_token = '0f...77'
 budget_id = '3a...99'
 accounts = {
