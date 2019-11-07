@@ -22,13 +22,7 @@ $ pipenv install
 $ pipenv run python site.py
 ```
 Open browser at http://localhost:8080
-Select your bank and file to upload
-
-### How to export CSV file from Nordea
-Export your bank transactions using Nordea Home banking
-![Imgur](https://i.imgur.com/aLoTe8w.png)
-
-Save file (ex: nordea.csv)
+Select your bank and file to upload. The site will update with your results.
 
 ### Requirements
  Python v3.7
