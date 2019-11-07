@@ -1,12 +1,15 @@
 '''
 ynab.py by wesselt, license is for this file
 Modified by Artturi Rämänen
-Copyright (C) 2019 wesselt
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+Tooling to read transactions from BUNQ (https://www.bunq.com/nl/)
+and upload them to YNAB (https://www.youneedabudget.com)
+
+Copyright (C) 2018 and later   wesselt@github
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License iversion 2 as 
+published by the Free Software Foundation.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,7 +18,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 '''
 
 from decimal import Decimal
