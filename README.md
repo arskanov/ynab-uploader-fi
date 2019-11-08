@@ -28,6 +28,21 @@ Select your bank and file to upload. The site will update with your results.
  Python v3.7
  pipenv
 
+### As Systemd service
+copy 'ynab-uploader-fi.service' to ex. `~/.config/systemd/user/` and change the working directory to point to this directory.
+Enable the service
+```
+systemctl --user enable ynab-uploader-fi
+```
+Enable service to be run without user logging in
+```
+sudo loginctl enable-linger $USER
+```
+Start service now
+```
+systemctl --user start ynab-uploader-fi
+```
+
 ### Thanks
 Thanks to `danielcft/nordea-ynab-converter-dk` for the base for nordea-ynab conversions, under MIT license.
 Thanks to `wesselt/bunq2ynab` for ynab-uploading code, under GPLv2 license.
