@@ -99,4 +99,4 @@ def get_account_id(ibanToFind):
     return accounts.get(ibanToFind)
 
 
-run(host='localhost', port=8080, debug=True)
+run(host='0.0.0.0', port=8080, debug=True)
