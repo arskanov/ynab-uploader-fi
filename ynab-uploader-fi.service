@@ -2,18 +2,25 @@
 # Human readable name of the unit
 Description=YNAB Web Uploader Service
 
+# Startup after network OK, no rush
+After=network-online.target
+Wants=network-online.target
+
 [Service]
-# Set correct working directory!
-WorkingDirectory=/home/pi/pyscripts/ynab-uploader-fi/
+Type=simple
+
+# Set working directory for pipenv install
+WorkingDirectory=/home/me/pyscripts/ynab-uploader-fi/
 
 # For unbuffered logging
 Environment=PYTHONUNBUFFERED=1
 
 # Install dependencies
-ExecStartPre=/usr/bin/python -m pipenv install
+# May create a new venv each time service is started?
+ExecStartPre=/usr/local/bin/pipenv install
 
 # Command to execute when the service is started
-ExecStart=/usr/bin/python -m pipenv run site.py
+ExecStart=/usr/local/bin/pipenv run python3 /home/me/pyscripts/ynab-uploader-fi/site.py
 
 # Persevere in difficulty
 Restart=on-failure
