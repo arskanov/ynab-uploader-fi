@@ -15,8 +15,7 @@ WorkingDirectory=/home/me/pyscripts/ynab-uploader-fi/
 # For unbuffered logging
 Environment=PYTHONUNBUFFERED=1
 
-# Install dependencies
-# May create a new venv each time service is started?
+# Check for and install dependencies
 ExecStartPre=/usr/local/bin/pipenv install
 
 # Command to execute when the service is started
